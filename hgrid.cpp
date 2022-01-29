@@ -40,7 +40,7 @@ void setup{
  string ans; //will store answer from input stream
  
  cout<<"Enter how long you want the grid to be. Positive numbers only please!\n";
- while(cyc<3){
+ while(cyc<2){
   getline(cin, ans);
  
    /*will take the whole line. Normally spaces after characters end the cin function, and any characters after the space would remain
@@ -56,7 +56,16 @@ void setup{
  } else if(cyc==1){
    y=ans_num;
   cout<<"Radical! That's a mighty fine grid! Now let's let 'er rip!\n";
+   ++cyc;
  }
      
   
+}
+
+void populate(){
+ int cyc=0;
+ while(cyc<x*y){
+  grid[cyc]=rand() %6;
+  ++cyc;
+ }
 }
