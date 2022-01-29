@@ -13,15 +13,17 @@ int main(){
   int cyc=0;
   setup();
   unsigned short *grid=new unsigned short[x*y]{0); //allocate a 1 d array of length x times y
-  populate(int x, int y);
+  populate();
   while(cyc<x*y){
     if(grid[cyc]==0){
       cout<<"@";
     } else if(grid[cyc]==1) {
       cout<<"^";
+    } else {
+     cout<<""";
     }
     ++cyc;
-    if(cyc%x==0){
+    if(cyc%x==0){ //print the newline character when cyc is a multiple of x
       cout<<"\n";
     }
   }
