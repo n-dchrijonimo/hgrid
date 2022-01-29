@@ -1,6 +1,9 @@
 #include <iostream>
+/*headers and libraries you've installed or that came with your operating system are located in a special system folder. Your compiler will
+know to looks for them there, and you don't need to include the header file extension (though you can if you really want). When included they should be enclosed
+ in less than and greater than signs.*/
 #include <string>
-#include "funcs.h"
+#include "funcs.h" //when including a local header, the full file name is used, and it's enclosed in quotes instead of <>
 
 using namespace std;
 
