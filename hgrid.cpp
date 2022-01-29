@@ -2,15 +2,22 @@
 #include 
 
 using namespace std;
-int cyc=0;
+
 int main(){
+  srand((unsigned int)time(NULL)); //sets rng seed
+  int cyc=0;
   setup();
-  while(
-    if(){
-  cout
-    } else if {
-      
+  while(cyc<x*y){
+    if(grid[cyc]==0){
+      cout<<"@";
+    } else if(grid[cyc]==1) {
+      cout<<"^";
     }
+    ++cyc;
+    if(cyc%x==0){
+      cout<<"\n";
+    }
+  }
  return 0; 
 }
 
