@@ -7,6 +7,7 @@ using namespace std;
 
 //functions
 void setup(); //enter initial info
+void populate(); //will fill the grid with random numbers
 int positive_int_only(string);
 
 //vars
